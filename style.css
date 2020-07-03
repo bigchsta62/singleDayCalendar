@@ -22,3 +22,33 @@
     padding-top: 10px;
     color: gold;
 }
+
+.form-row {
+    margin: 3px 0px 3px 0px;
+}
+
+
+
+label {
+    border-top: lightgrey;
+    border-bottom: lightgray;
+    border-style: groove;
+    border-left: none;
+    border-right: none;    
+    margin: 0px;
+    padding: 2rem;
+    text-align: center;
+    text-justify: initial;
+}
+
+.col-8 {
+    border-top: lightgrey;
+    border-bottom: lightgray;
+    border-style: groove;     
+    border-radius: 0px 0px 0px 0px;
+}
+
+.col-2 {
+    border-radius: 0px 20px 20px 0px;
+    
+}

@@ -1,0 +1,24 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans',
+     'Lucida Sans Regular', 
+     'Lucida Grande', 
+     'Lucida Sans Unicode', 
+      Verdana, 
+      sans-serif;
+}
+
+.jumbotron {
+    background-color: rgb(66, 74, 99);
+    padding: 2rem 0rem;
+    border-radius: 0%;
+}
+
+.display-3 {
+    font-weight: bold;
+}
+
+#currentDay {
+    padding-top: 10px;
+    color: gold;
+}

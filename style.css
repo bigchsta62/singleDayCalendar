@@ -8,6 +8,10 @@
       sans-serif;
 }
 
+body {
+    background-color: lightgray;
+}
+
 .jumbotron {
     background-color: rgb(66, 74, 99);
     padding: 2rem 0rem;
@@ -24,31 +28,51 @@
 }
 
 .form-row {
-    margin: 3px 0px 3px 0px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 5px;
 }
 
 
 
 label {
+    min-width: 3rem;
     border-top: lightgrey;
     border-bottom: lightgray;
     border-style: groove;
     border-left: none;
     border-right: none;    
     margin: 0px;
-    padding: 2rem;
+    padding: 2rem;    
     text-align: center;
     text-justify: initial;
 }
 
-.col-8 {
+.col-7 {
+    background-color: lightgray;
     border-top: lightgrey;
     border-bottom: lightgray;
     border-style: groove;     
     border-radius: 0px 0px 0px 0px;
 }
 
-.col-2 {
+.btn {
     border-radius: 0px 20px 20px 0px;
     
+    
 }
+
+
+  .past {
+    background-color: darkgray;
+  };
+
+
+  .present {
+    background-color: chartreuse;
+  };
+
+
+  .future {
+    background-color: crimson;
+  };

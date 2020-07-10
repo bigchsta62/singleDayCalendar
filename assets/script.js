@@ -19,7 +19,7 @@ $(document).ready(function () {
     let textID = 0;
     // makes a set number of rows based on the amount of hours 
     //and also current color function.
-    for (let i = 15; i < startTime.length; i++) {
+    for (let i = 8; i < startTime.length - 7 ; i++) {
 
         const id = ++textID;
 
@@ -77,63 +77,42 @@ $(document).ready(function () {
         }
     };
 
-
-    $('textarea').keyup(function () {
-        const keyStroke = $(this).val();
-        console.log(keyStroke);
-    });
-
-    const typedText = $('textarea').val();
-    console.log(typedText);
-
-
-    const notes= localStorage.getItem('notes');
-    console.log(notes);
+    //puts saved value in textArea from local storage
+    const lastNotes = JSON.parse(localStorage.getItem('notes'));
+    $('#textArea1').append(lastNotes.text1);
+    $('#textArea2').append(lastNotes.text2);
+    $('#textArea3').append(lastNotes.text3);
+    $('#textArea4').append(lastNotes.text4);
+    $('#textArea5').append(lastNotes.text5);
+    $('#textArea6').append(lastNotes.text6);
+    $('#textArea7').append(lastNotes.text7);
+    $('#textArea8').append(lastNotes.text8);
+    $('#textArea9').append(lastNotes.text9);
+    // console.log(lastNotes);
 
     // WHEN I click the save button for that timeblock
     const saveBtn = $('.btn');
-
 
     saveBtn.on('click', function () {
         // THEN the text for that event is saved in local storage
         console.log('button works')
         event.preventDefault();
 
-
         const savedNotes = {
-            text1 : $('#textArea1').val().trim(),
-            text2 : $('#textArea2').val().trim(),
-            text3 : $('#textArea3').val().trim(),
-            text4 : $('#textArea4').val().trim(),
-            text5 : $('#textArea5').val().trim(),
-            text6 : $('#textArea6').val().trim(),
-            text7 : $('#textArea7').val().trim(),
-            text8 : $('#textArea8').val().trim()
+            text1: $('#textArea1').val().trim(),
+            text2: $('#textArea2').val().trim(),
+            text3: $('#textArea3').val().trim(),
+            text4: $('#textArea4').val().trim(),
+            text5: $('#textArea5').val().trim(),
+            text6: $('#textArea6').val().trim(),
+            text7: $('#textArea7').val().trim(),
+            text8: $('#textArea8').val().trim(),
+            text9: $('#textArea9').val().trim()
         };
-        
-        // notesSaved = text;
-        
-        
-        // console.log(text2),
-        // console.log(text1),
-        // console.log(text3),
-        // console.log(text4),
-        // console.log(text5),
-        // console.log(text6),
-        // console.log(text7),
-        // console.log(text8);
-        
-
 
         localStorage.setItem('notes', JSON.stringify(savedNotes));
         console.log(savedNotes);
-        
-        // // validate the fields
-        // if (notesSaved === "") {
-            //     displayMessage("error", "Notes cannot be blank");
-            // } else {
-                //     displayMessage("success", "Notes saved successfully");
-                
-            });
-            
-        });
+
+    });
+
+});

@@ -21,3 +21,9 @@ Just click on each block to type in notes or events,
 Need t close your browser or leave the page?
  That's ok. Once saved, all your notes will be 
  right where you left them when you come back.
+
+ Ejnoy
+
+
+ Here's a link to the deployed application:
+ https://bigchsta62.github.io/singleDayCalendar/

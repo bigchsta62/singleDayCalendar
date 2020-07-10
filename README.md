@@ -18,6 +18,6 @@ When the time is one hour past that value,
 Just click on each block to type in notes or events,
  and then click the save button. 
 
-Need t close your browser or leave the page?
+Need to close your browser or leave the page?
  That's ok. Once saved, all your notes will be 
  right where you left them when you come back.

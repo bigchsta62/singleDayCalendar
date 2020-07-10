@@ -28,7 +28,7 @@ $(document).ready(function () {
         // WHEN I click into a timeblock
         // THEN I can enter an event
         textArea = $('<textarea type="text" name="notes" placeholder="notes" class="col-7 form-control" rows="3" id="textArea' + id + '"></textarea>');
-        btn = $('<button type="submit" class="col-1 btn btn-primary" id="saveBtn"><i style="font-size:36px" class="far">&#xf0c7;</i></button>');
+        btn = $('<button type="submit" class="col-2 btn btn-primary" id="saveBtn"><i style="font-size:36px" class="far">&#xf0c7;</i></button>');
         //Make row with with all the pieces
         row.append(label);
         row.append(textArea)
